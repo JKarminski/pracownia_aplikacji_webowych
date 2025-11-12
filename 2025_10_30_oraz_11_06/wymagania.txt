@@ -1,0 +1,3 @@
+nalezy stworzyc baze danych o nazwie "zapisy" oraz uruchomic xamppa
+npm i mysql
+npm i express

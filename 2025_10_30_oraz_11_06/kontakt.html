@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pliczek</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <nav>
+        <a href="/">Glowna</a>
+        <a href="/o-nas">O nas</a>
+        <a href="/oferta">Oferta</a>
+        <a href="/kontakt">Kontakt</a>
+    </nav>
+    <main>
+        <h1>Kontakt</h1>
+        <form action="/kontakt" method="POST">
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie" name="imie" required><br><br>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="wiadomosc">Treść wiadomości:</label><br>
+            <textarea id="wiadomosc" name="wiadomosc" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Wyślij">
+        </form>
+        
+    </main>
+    <footer>
+        <h1>Jonatan Karmiński 4C</h1>
+    </footer>
+</body>
+</html>
