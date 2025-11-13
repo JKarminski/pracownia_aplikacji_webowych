@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require("node:path");
 const fs = require('fs');
+const mime = require('mime-types')
 const app = express()
 const port = 3000
 
@@ -40,6 +41,24 @@ app.get('/get_params', (req, res) => {
     })
 
 })
+
+app.get('*', (req, res) => {
+    const filePath = path.join(__dirname, 'assets', req.path)
+
+    fs.stat(filePath, (err, stats) => {
+        if (!err && stats.isFile()) {
+            const mimeType = mime.lookup(filePath) || 'application/octet-stream'
+            res.type(mimeType)
+            res.sendFile(filePath)
+        } else {
+            res.status(404).json({
+                error: "File not found"
+            })
+        }
+    })
+})
+
+
 app.listen(port, () => {
     console.log("App listening at http://localhost:" + port)
 })
