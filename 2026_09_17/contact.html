@@ -9,17 +9,31 @@
 </head>
 
 <body>
-    <h1>Witaj świecie!</h1>
-    <p>To jest moja strona HTML.</p>
-    <a href="/" target="_blank">Strona glowna</a>
-    <a href="/kontakt" target="_blank">Kontakt</a>
+    <header>
+        <h1>Strona kontaktowa</h1>
+        <p>To jest strona do kontaktu!</p>
+    </header>
+    
+    <nav>
+        <a href="/">Strona glowna</a>
+        <a href="/kontakt">Kontakt</a>
+    </nav>
 
-    <form action="GET">
-        <div id="name"><label for="name">wpisz swoje imie </label><input type="text" id="name"></div>
-        <div id="surname"><label for="surname">wpisz swoje imie </label><input type="text" id="surname"></div>
-        <div id="message"><label for="message">wpisz swoje imie </label><textarea name="message" id="message"></textarea></div>
-        <div id="name"><label for="name">wpisz swoje imie </label><input type="submit" id="name"></div>
+
+    <form action="/kontakt" method="GET">
+        <div id="name" class="formsy">
+            <label for="input_name">Wpisz swoje imie: </label><input type="text" id="input_name" name="name" class="inputsy">
+        </div>
+        <div id="email" class="formsy">
+            <label for="input_email">Wpisz swoje nazwisko: </label><input type="text" id="input_email" name="email" class="inputsy">
+        </div>
+        <div id="message" class="formsy">
+            <label for="input_message">Wpisz wiadomosc: </label>
+            <textarea id="input_message" name="message" class="inputsy"></textarea>
+        </div>
+        <input type="submit" value="Wyslij" id="submiter">
     </form>
+    <footer>Strone wykonal: Johnny 2026</footer>
 </body>
 
 </html>

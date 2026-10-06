@@ -1,3 +1,108 @@
 * {
     background-color: #8888dd;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #b4b4f5;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #7777cc;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+    height: 50px;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: #5555aa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.formsy {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputsy {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #5555aa;
+}
+
+#submiter {
+    background-color: #5555aa;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#submiter:hover {
+    background-color: #333399;
+}
+
+#input_message {
+    height: 200px;
+    width: 100%;
+}
+
+#message {
+    width: 20%;
+}
+
+#ciekawostki {
+    margin-top: 50px;
+    text-align: center;
+    color: #ddddff;
 }
