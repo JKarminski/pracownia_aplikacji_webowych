@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "title": "The Hobbit",
+    "author": "J. R. R. Tolkien",
+    "year": 1937
+  },
+  {
+    "id": 1,
+    "title": "The Lord of the Rings",
+    "author": "J. R. R. Tolkien",
+    "year": 1954
+  },
+  {
+    "id": 2,
+    "title": "Wiedzmin: Ostatnie zyczenie",
+    "author": "Andrzej Sapkowski",
+    "year": 1993
+  },
+  {
+    "id": 3,
+    "title": "Opowiesci z Narnii",
+    "author": "C. S. Lewis",
+    "year": 1950
+  },
+  {
+    "id": 4,
+    "title": "Przygody Tomka Sawyera",
+    "author": "Mark Twain",
+    "year": "1876"
+  }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taki oto pliczek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Strona dodawania</h1>
+        <p>To jest strona do dodawania ksiazek!</p>
+    </header>
+    
+    <nav>
+        <a href="/">Strona glowna</a>
+        <a href="/about">O nas</a>
+        <a href="/add">Dodaj ksiazke</a>
+        <a href="/books" target="_blank">Ksiazki</a>
+    </nav>
+
+
+    <form action="/books" method="POST">
+        <div id="title" class="formsy">
+            <label for="input_title">Wpisz tytul: </label><input type="text" id="input_title" name="title" class="inputsy">
+        </div>
+        <div id="author" class="formsy">
+            <label for="input_author">Wpisz autora: </label><input type="text" id="input_author" name="author" class="inputsy">
+        </div>
+        <div id="year" class="formsy">
+            <label for="input_year">Wpisz rok: </label><input type="text" id="input_year" name="year" class="inputsy">
+        </div>
+        <input type="submit" value="Wyslij" id="submiter">
+    </form>
+
+    <footer>Strone wykonal: Johnny 2026</footer>
+</body>
+
+</html>
